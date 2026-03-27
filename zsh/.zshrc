@@ -11,3 +11,10 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   export JAVA_HOME=/opt/homebrew/Cellar/openjdk@17/17.0.16/libexec/openjdk.jdk/Contents/Home
   export PATH="$JAVA_HOME/bin:$PATH"
 fi
+export PATH=$PATH:/opt/IDriveForLinux/bin
+
+idrive() {
+    (cd /opt/IDriveForLinux/bin && ./idrive "$@")
+
+echo 'eval "$(zoxide init zsh)"
+}
