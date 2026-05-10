@@ -15,6 +15,5 @@ export PATH=$PATH:/opt/IDriveForLinux/bin
 
 idrive() {
     (cd /opt/IDriveForLinux/bin && ./idrive "$@")
-
-echo 'eval "$(zoxide init zsh)"
 }
+eval "$(zoxide init zsh)"
